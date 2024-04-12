@@ -26,9 +26,6 @@ def stocks():
             else:
                 #query the api using the form data
                 err = None
-
-                ###################### 
-                #THIS IS WHERE YOU WILL CALL THE METHODS FROM THE CHARTS.PY FILE AND IMPLEMENT YOUR CODE
             
                 request_url = build_URL(time_series, symbol)
                 err = request_url
@@ -40,7 +37,6 @@ def stocks():
 
                 chart_data = generate_graph(symbol, chart_type, open_line, high_line, low_line, close_line)
                 
-                #######################
                 
                 #This chart variable is what is passed to the stock.html page to render the chart returned from the api
                 chart = chart_data.render_data_uri()
