@@ -15,7 +15,6 @@ from wtforms.validators import URL, DataRequired, Email, EqualTo, Length
 class StockForm(FlaskForm):
     """Generate Your Graph."""
     
-    #THIS IS WHERE YOU WILL IMPLEMENT CODE TO POPULATE THE SYMBOL FIELD WITH STOCK OPTIONS
     symbol = SelectField("Choose Stock Symbol",[DataRequired()],
         choices=[
             ("IBM", "IBM"),
