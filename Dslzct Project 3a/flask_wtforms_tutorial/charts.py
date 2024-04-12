@@ -1,9 +1,4 @@
-'''
-This web service extends the Alphavantage api by creating a visualization module, 
-converting json query results retuned from the api into charts and other graphics. 
 
-This is where you should add your code to function query the api
-'''
 import requests
 import pygal
 from datetime import date, datetime
@@ -11,7 +6,7 @@ import json
 import lxml
 
 # Constant for the API key
-API_KEY = "AH4E9KX41PXBFQQI"
+API_KEY = "UT2CFA26ZELQE5H2"
 
 #Helper function for converting date
 def convert_date(str_date):
